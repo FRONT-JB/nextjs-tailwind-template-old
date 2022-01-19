@@ -80,21 +80,20 @@ yarn tailwindcss init -p
 
 ```javascript
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
+```
 
-// GLOBAL.css
+`styles/globals.css`
+
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 ```
 
 ---
