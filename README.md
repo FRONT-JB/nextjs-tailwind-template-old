@@ -50,6 +50,7 @@ eslintrc.json
 ### gitignore
 
 Zero-Install을 사용하겠다면?
+
 ```
 .yarn/*
 !.yarn/cache
@@ -61,6 +62,7 @@ Zero-Install을 사용하겠다면?
 ```
 
 Zero-Install을 사용하지 않겠다면?
+
 ```
 .yarn/*
 !.yarn/patches
@@ -96,6 +98,32 @@ module.exports = {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
+
+`unknown at rule @tailwindcss(unknownatrules)`
+
+**.vscode folder**
+
+```javascript
+// settings.json
+"css.customData": [".vscode/css_custom.json"],
+
+//css_custom.json
+"version": 1.1,
+  "atDirectives": [
+    {
+      "name": "@tailwind",
+      "description": "Use the `@tailwind` directive to insert Tailwind's `base`, `components`, `utilities` and `screens` styles into your CSS.",
+      "references": [
+        {
+          "name": "Tailwind Documentation",
+          "url": "https://tailwindcss.com/docs/functions-and-directives#tailwind"
+        }
+      ]
+    },
+
+    ...other
+  ]
 ```
 
 ---
