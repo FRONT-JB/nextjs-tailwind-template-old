@@ -1,44 +1,20 @@
 # Next.JS
 
-## NextJS Setup
-
-### Yarn
-
-> ❗ 이미 node_modules이 생겼다면
->
-> `"packageManager": "yarn@3.1.1" 를 패키지에 추가`
-
----
+### Yarn Berry
 
 `yarn create next-app —typescript`
 
-`yarn set version berry`
+`rm -rf .git`
 
-`echo ‘nodeLinker: “pnp”’ >> .yarnrc.yml`
+`yarn set version stable`
 
 `yarn plugin import typescript`
-
-`yarn add -D typescript`
 
 `yarn dlx @yarnpkg/sdks vscode`
 
 `yarn`
 
 `yarn dev`
-
----
-
-### gitignore
-
-```
-.yarn/*
-!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-```
 
 ---
 
@@ -67,6 +43,32 @@ module.exports = {
 dist
 reset.css
 eslintrc.json
+```
+
+---
+
+### gitignore
+
+Zero-Install을 사용하겠다면?
+```
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+```
+
+Zero-Install을 사용하지 않겠다면?
+```
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 ```
 
 ---
