@@ -6,6 +6,7 @@
   "eslint.nodePath": ".yarn/sdks",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  "css.customData": [".vscode/css_custom.json"],
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript", // if you are using typescript
     "typescriptreact": "javascript" // if you are using typescript with react
